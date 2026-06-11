@@ -50,7 +50,8 @@ export default function jengo(): Plugin {
                             rollupOptions: {
                                 input: inputs
                             }
-                        }
+                        },
+                        publicDir: 'resources/static'
                     };
 
                 } catch (error) {
