@@ -12,7 +12,7 @@ export default function jengo(): Plugin {
         config: (config: UserConfig, { command }) => {
             if (command === 'build' || command === 'serve') {
                 try {
-                    const output = execSync('php spark vite:config', { encoding: 'utf-8' });
+                    const output = execSync('php spark jengo:vite-config', { encoding: 'utf-8' });
                     // Find the start of the JSON object
                     const jsonStart = output.indexOf('{');
                     const jsonEnd = output.lastIndexOf('}');
