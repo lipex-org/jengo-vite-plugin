@@ -51,7 +51,17 @@ export default function jengo(): Plugin {
                                 input: inputs
                             }
                         },
-                        publicDir: 'resources/static'
+                        publicDir: 'resources/static',
+
+                        server: {
+                            watch: {
+                                ignored: [
+                                    '**/.jengo/**',
+                                    '**/writable/**',
+                                    '**/vendor/**'
+                                ]
+                            }
+                        }
                     };
 
                 } catch (error) {
