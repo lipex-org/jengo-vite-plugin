@@ -33,7 +33,7 @@ export default defineConfig({
 
 The plugin works out of the box with zero configuration. However, it respects your manual Vite configuration if you choose to override defaults.
 
-- **Entrypoints**: The plugin executes `php spark vite:config` to discover entrypoints. Ensure your Jengo CLI is working.
+- **Entrypoints**: The plugin executes `php spark jengo:vite config` to discover entrypoints. Ensure your Jengo CLI is working.
 - **Output Directory**: Defaults to `public/dist`. You can override this in your `vite.config.js` `build.outDir`.
 - **Manifest**: Defaults to `true`. You can override this in your `vite.config.js` `build.manifest`.
 
